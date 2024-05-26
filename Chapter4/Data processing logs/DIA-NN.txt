@@ -1,0 +1,955 @@
+DIA-NN 1.8 (Data-Independent Acquisition by Neural Networks)
+Compiled on Jun 28 2021 14:55:31
+Current date and time: Mon Jan 17 12:48:39 2022
+CPU: GenuineIntel Intel(R) Xeon(R) CPU E7-4830 v4 @ 2.00GHz
+SIMD instructions: AVX AVX2 FMA SSE4.1 SSE4.2 
+Logical CPU cores: 12
+diann.exe --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-1_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-2_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-3_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-4_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-5_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-6_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-7_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-8_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-9_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-10_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-11_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-12_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-13_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-1_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-2_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-3_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-4_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-5_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-1_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-2_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-3_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-4_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-5_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-6_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-7_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-8_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-9_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-10_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-11_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-12_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-13_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-1_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-2_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-3_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-4_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-13_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-1_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-2_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-3_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-4_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-5_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-6_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-7_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-8_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-9_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-10_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-11_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-12_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-13_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-1_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-2_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-3_DIA.raw  --f C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-4_DIA.raw  --lib C:\Users\massspecuser\Desktop\DIA_Latin_square\Library3-dda_samples\output\library.tsv --threads 12 --verbose 1 --out C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.tsv --qvalue 0.01 --matrices --fasta C:\Users\massspecuser\Desktop\DIA_Latin_square\2021-10-29-decoys-uniprot-proteome_UP000005640.fasta-cambridge.fas --met-excision --cut K*,R* --var-mods 1 --var-mod UniMod:35,15.994915,M --var-mod UniMod:1,42.010565,*n --monitor-mod UniMod:1 --mass-acc 10 --mass-acc-ms1 20 --no-prot-inf --int-removal 0 --smart-profiling --peak-center 
+
+Thread number set to 12
+Output will be filtered at 0.01 FDR
+Precursor/protein x samples expression level matrices will be saved along with the main report
+N-terminal methionine excision enabled
+In silico digest will involve cuts at K*,R*
+Maximum number of variable modifications set to 1
+Modification UniMod:35 with mass delta 15.9949 at M will be considered as variable
+Modification UniMod:1 with mass delta 42.0106 at *n will be considered as variable
+Protein inference will not be performed
+Number of interference removal iterations set to 0
+When generating a spectral library, in silico predicted spectra will be retained if deemed more reliable than experimental ones
+Fixed-width center of each elution peak will be used for quantification
+Mass accuracy will be fixed to 1e-05 (MS2) and 2e-05 (MS1)
+The following variable modifications will be scored: UniMod:1 
+Unless the spectral library specified was created by this version of DIA-NN, it's strongly recommended to specify a FASTA database and use the 'Reannotate' function to allow DIA-NN to identify peptides which can originate from the N/C terminus of the protein: otherwise site localisation might not work properly for modifications of the protein N-terminus or for modifications which do not allow enzymatic cleavage after the modified residue
+
+53 files will be processed
+[0:00] Loading spectral library C:\Users\massspecuser\Desktop\DIA_Latin_square\Library3-dda_samples\output\library.tsv
+[0:12] Finding proteotypic peptides (assuming that the list of UniProt ids provided for each peptide is complete)
+[0:12] Spectral library loaded: 4463 protein isoforms, 4463 protein groups and 82633 precursors in 65586 elution groups.
+[0:12] Loading protein annotations from FASTA C:\Users\massspecuser\Desktop\DIA_Latin_square\2021-10-29-decoys-uniprot-proteome_UP000005640.fasta-cambridge.fas
+[0:28] Annotating library proteins with information from the FASTA database
+[0:28] Gene names missing for some isoforms
+[0:28] Library contains 4463 proteins, and 4253 genes
+[0:28] Initialising library
+[0:29] Saving the library to C:\Users\massspecuser\Desktop\DIA_Latin_square\Library3-dda_samples\output\library.tsv.speclib
+
+[0:29] File #1/53
+[0:29] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-1_DIA.raw
+[1:09] 74343 library precursors are potentially detectable
+[1:09] Processing...
+[1:15] RT window set to 2.79855
+[1:15] Peak width: 4.68
+[1:15] Scan window radius set to 10
+[1:15] Recommended MS1 mass accuracy setting: 3.23787 ppm
+[1:21] Removing low confidence identifications
+[1:21] Searching PTM decoys
+[1:22] Training neural networks: 46672 targets, 18478 decoys
+[1:27] Number of IDs at 0.01 FDR: 36203
+[1:27] Calculating protein q-values
+[1:27] Number of genes identified at 1% FDR: 3382 (precursor-level), 3253 (protein-level) (inference performed using proteotypic peptides only)
+[1:27] Quantification
+[1:28] Precursors with monitored PTMs at 1% FDR: 443 out of 471
+[1:28] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[1:29] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-1_DIA.raw.quant.
+
+[1:29] File #2/53
+[1:29] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-2_DIA.raw
+[2:08] 74343 library precursors are potentially detectable
+[2:08] Processing...
+[2:13] RT window set to 2.78603
+[2:13] Recommended MS1 mass accuracy setting: 3.74224 ppm
+[2:20] Removing low confidence identifications
+[2:20] Searching PTM decoys
+[2:20] Training neural networks: 46563 targets, 18596 decoys
+[2:25] Number of IDs at 0.01 FDR: 35801
+[2:26] Calculating protein q-values
+[2:26] Number of genes identified at 1% FDR: 3388 (precursor-level), 3275 (protein-level) (inference performed using proteotypic peptides only)
+[2:26] Quantification
+[2:27] Precursors with monitored PTMs at 1% FDR: 449 out of 465
+[2:27] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[2:27] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-2_DIA.raw.quant.
+
+[2:27] File #3/53
+[2:27] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-3_DIA.raw
+[3:06] 74343 library precursors are potentially detectable
+[3:06] Processing...
+[3:12] RT window set to 2.80364
+[3:12] Recommended MS1 mass accuracy setting: 3.4702 ppm
+[3:18] Removing low confidence identifications
+[3:18] Searching PTM decoys
+[3:19] Training neural networks: 47062 targets, 18913 decoys
+[3:24] Number of IDs at 0.01 FDR: 36519
+[3:26] Calculating protein q-values
+[3:26] Number of genes identified at 1% FDR: 3426 (precursor-level), 3320 (protein-level) (inference performed using proteotypic peptides only)
+[3:26] Quantification
+[3:27] Precursors with monitored PTMs at 1% FDR: 441 out of 456
+[3:27] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[3:27] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-3_DIA.raw.quant.
+
+[3:28] File #4/53
+[3:28] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-4_DIA.raw
+[4:06] 74343 library precursors are potentially detectable
+[4:06] Processing...
+[4:11] RT window set to 2.82436
+[4:11] Recommended MS1 mass accuracy setting: 3.69473 ppm
+[4:18] Removing low confidence identifications
+[4:18] Searching PTM decoys
+[4:19] Training neural networks: 46974 targets, 19035 decoys
+[4:23] Number of IDs at 0.01 FDR: 36287
+[4:24] Calculating protein q-values
+[4:24] Number of genes identified at 1% FDR: 3412 (precursor-level), 3300 (protein-level) (inference performed using proteotypic peptides only)
+[4:24] Quantification
+[4:25] Precursors with monitored PTMs at 1% FDR: 462 out of 478
+[4:25] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[4:25] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-4_DIA.raw.quant.
+
+[4:26] File #5/53
+[4:26] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-5_DIA.raw
+[5:02] 74343 library precursors are potentially detectable
+[5:02] Processing...
+[5:08] RT window set to 2.77389
+[5:08] Recommended MS1 mass accuracy setting: 3.25372 ppm
+[5:14] Removing low confidence identifications
+[5:14] Searching PTM decoys
+[5:15] Training neural networks: 44335 targets, 17369 decoys
+[5:19] Number of IDs at 0.01 FDR: 33355
+[5:19] Calculating protein q-values
+[5:19] Number of genes identified at 1% FDR: 3268 (precursor-level), 3156 (protein-level) (inference performed using proteotypic peptides only)
+[5:19] Quantification
+[5:20] Precursors with monitored PTMs at 1% FDR: 390 out of 407
+[5:20] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[5:21] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-5_DIA.raw.quant.
+
+[5:21] File #6/53
+[5:21] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-6_DIA.raw
+[5:59] 74343 library precursors are potentially detectable
+[5:59] Processing...
+[6:05] RT window set to 2.83258
+[6:05] Recommended MS1 mass accuracy setting: 3.45983 ppm
+[6:11] Removing low confidence identifications
+[6:11] Searching PTM decoys
+[6:12] Training neural networks: 47093 targets, 19022 decoys
+[6:17] Number of IDs at 0.01 FDR: 36623
+[6:18] Calculating protein q-values
+[6:18] Number of genes identified at 1% FDR: 3411 (precursor-level), 3290 (protein-level) (inference performed using proteotypic peptides only)
+[6:18] Quantification
+[6:18] Precursors with monitored PTMs at 1% FDR: 440 out of 469
+[6:18] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[6:19] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-6_DIA.raw.quant.
+
+[6:19] File #7/53
+[6:19] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-7_DIA.raw
+[6:59] 74343 library precursors are potentially detectable
+[6:59] Processing...
+[7:05] RT window set to 2.82084
+[7:05] Recommended MS1 mass accuracy setting: 3.23586 ppm
+[7:12] Removing low confidence identifications
+[7:12] Searching PTM decoys
+[7:13] Training neural networks: 48074 targets, 19744 decoys
+[7:18] Number of IDs at 0.01 FDR: 37487
+[7:19] Calculating protein q-values
+[7:19] Number of genes identified at 1% FDR: 3451 (precursor-level), 3380 (protein-level) (inference performed using proteotypic peptides only)
+[7:19] Quantification
+[7:20] Precursors with monitored PTMs at 1% FDR: 442 out of 475
+[7:20] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[7:20] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-7_DIA.raw.quant.
+
+[7:21] File #8/53
+[7:21] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-8_DIA.raw
+[7:59] 74343 library precursors are potentially detectable
+[7:59] Processing...
+[8:05] RT window set to 2.79837
+[8:05] Recommended MS1 mass accuracy setting: 3.40369 ppm
+[8:12] Removing low confidence identifications
+[8:12] Searching PTM decoys
+[8:12] Training neural networks: 47580 targets, 19433 decoys
+[8:17] Number of IDs at 0.01 FDR: 36890
+[8:18] Calculating protein q-values
+[8:18] Number of genes identified at 1% FDR: 3426 (precursor-level), 3314 (protein-level) (inference performed using proteotypic peptides only)
+[8:18] Quantification
+[8:19] Precursors with monitored PTMs at 1% FDR: 433 out of 472
+[8:19] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[8:19] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-8_DIA.raw.quant.
+
+[8:20] File #9/53
+[8:20] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-9_DIA.raw
+[8:59] 74343 library precursors are potentially detectable
+[8:59] Processing...
+[9:05] RT window set to 2.81924
+[9:05] Recommended MS1 mass accuracy setting: 3.56382 ppm
+[9:11] Removing low confidence identifications
+[9:11] Searching PTM decoys
+[9:12] Training neural networks: 47646 targets, 19351 decoys
+[9:17] Number of IDs at 0.01 FDR: 37091
+[9:18] Calculating protein q-values
+[9:18] Number of genes identified at 1% FDR: 3445 (precursor-level), 3314 (protein-level) (inference performed using proteotypic peptides only)
+[9:18] Quantification
+[9:19] Precursors with monitored PTMs at 1% FDR: 434 out of 468
+[9:19] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[9:20] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-9_DIA.raw.quant.
+
+[9:20] File #10/53
+[9:20] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-10_DIA.raw
+[9:59] 74343 library precursors are potentially detectable
+[9:59] Processing...
+[10:05] RT window set to 2.7923
+[10:05] Recommended MS1 mass accuracy setting: 3.267 ppm
+[10:12] Removing low confidence identifications
+[10:12] Searching PTM decoys
+[10:12] Training neural networks: 48101 targets, 19878 decoys
+[10:17] Number of IDs at 0.01 FDR: 37378
+[10:18] Calculating protein q-values
+[10:18] Number of genes identified at 1% FDR: 3469 (precursor-level), 3345 (protein-level) (inference performed using proteotypic peptides only)
+[10:18] Quantification
+[10:18] Precursors with monitored PTMs at 1% FDR: 466 out of 485
+[10:18] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[10:19] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-10_DIA.raw.quant.
+
+[10:19] File #11/53
+[10:19] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-11_DIA.raw
+[10:58] 74343 library precursors are potentially detectable
+[10:58] Processing...
+[11:04] RT window set to 2.81526
+[11:04] Recommended MS1 mass accuracy setting: 3.24804 ppm
+[11:11] Removing low confidence identifications
+[11:11] Searching PTM decoys
+[11:12] Training neural networks: 48060 targets, 19805 decoys
+[11:16] Number of IDs at 0.01 FDR: 37418
+[11:17] Calculating protein q-values
+[11:17] Number of genes identified at 1% FDR: 3468 (precursor-level), 3346 (protein-level) (inference performed using proteotypic peptides only)
+[11:17] Quantification
+[11:18] Precursors with monitored PTMs at 1% FDR: 459 out of 475
+[11:18] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[11:18] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-11_DIA.raw.quant.
+
+[11:19] File #12/53
+[11:19] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-12_DIA.raw
+[11:58] 74343 library precursors are potentially detectable
+[11:58] Processing...
+[12:03] RT window set to 2.77979
+[12:03] Recommended MS1 mass accuracy setting: 3.17789 ppm
+[12:10] Removing low confidence identifications
+[12:10] Searching PTM decoys
+[12:11] Training neural networks: 47080 targets, 18654 decoys
+[12:15] Number of IDs at 0.01 FDR: 36847
+[12:16] Calculating protein q-values
+[12:16] Number of genes identified at 1% FDR: 3440 (precursor-level), 3302 (protein-level) (inference performed using proteotypic peptides only)
+[12:16] Quantification
+[12:17] Precursors with monitored PTMs at 1% FDR: 443 out of 462
+[12:17] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[12:18] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-12_DIA.raw.quant.
+
+[12:18] File #13/53
+[12:18] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-13_DIA.raw
+[12:59] 74343 library precursors are potentially detectable
+[12:59] Processing...
+[13:05] RT window set to 2.80728
+[13:05] Recommended MS1 mass accuracy setting: 3.35015 ppm
+[13:12] Removing low confidence identifications
+[13:12] Searching PTM decoys
+[13:13] Training neural networks: 49530 targets, 21002 decoys
+[13:18] Number of IDs at 0.01 FDR: 38768
+[13:19] Calculating protein q-values
+[13:19] Number of genes identified at 1% FDR: 3492 (precursor-level), 3360 (protein-level) (inference performed using proteotypic peptides only)
+[13:19] Quantification
+[13:20] Precursors with monitored PTMs at 1% FDR: 461 out of 483
+[13:20] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[13:20] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1_mix-13_DIA.raw.quant.
+
+[13:21] File #14/53
+[13:21] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-1_DIA.raw
+[13:59] 74343 library precursors are potentially detectable
+[13:59] Processing...
+[14:05] RT window set to 2.80962
+[14:05] Recommended MS1 mass accuracy setting: 3.75313 ppm
+[14:12] Removing low confidence identifications
+[14:12] Searching PTM decoys
+[14:13] Training neural networks: 49199 targets, 20633 decoys
+[14:17] Number of IDs at 0.01 FDR: 38924
+[14:18] Calculating protein q-values
+[14:18] Number of genes identified at 1% FDR: 3496 (precursor-level), 3374 (protein-level) (inference performed using proteotypic peptides only)
+[14:18] Quantification
+[14:19] Precursors with monitored PTMs at 1% FDR: 407 out of 435
+[14:19] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[14:20] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-1_DIA.raw.quant.
+
+[14:20] File #15/53
+[14:20] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-2_DIA.raw
+[14:58] 74343 library precursors are potentially detectable
+[14:59] Processing...
+[15:04] RT window set to 2.80803
+[15:04] Recommended MS1 mass accuracy setting: 3.44435 ppm
+[15:11] Removing low confidence identifications
+[15:11] Searching PTM decoys
+[15:12] Training neural networks: 49957 targets, 21605 decoys
+[15:17] Number of IDs at 0.01 FDR: 39533
+[15:18] Calculating protein q-values
+[15:18] Number of genes identified at 1% FDR: 3525 (precursor-level), 3416 (protein-level) (inference performed using proteotypic peptides only)
+[15:18] Quantification
+[15:19] Precursors with monitored PTMs at 1% FDR: 425 out of 452
+[15:19] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[15:19] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-2_DIA.raw.quant.
+
+[15:20] File #16/53
+[15:20] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-3_DIA.raw
+[16:02] 74343 library precursors are potentially detectable
+[16:02] Processing...
+[16:08] RT window set to 2.82601
+[16:08] Recommended MS1 mass accuracy setting: 3.61947 ppm
+[16:15] Removing low confidence identifications
+[16:15] Searching PTM decoys
+[16:16] Training neural networks: 50669 targets, 22665 decoys
+[16:21] Number of IDs at 0.01 FDR: 39150
+[16:22] Calculating protein q-values
+[16:22] Number of genes identified at 1% FDR: 3531 (precursor-level), 3420 (protein-level) (inference performed using proteotypic peptides only)
+[16:22] Quantification
+[16:23] Precursors with monitored PTMs at 1% FDR: 415 out of 432
+[16:23] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[16:24] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-3_DIA.raw.quant.
+
+[16:24] File #17/53
+[16:24] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-4_DIA.raw
+[17:02] 74343 library precursors are potentially detectable
+[17:02] Processing...
+[17:07] RT window set to 2.81691
+[17:07] Recommended MS1 mass accuracy setting: 3.73733 ppm
+[17:14] Removing low confidence identifications
+[17:14] Searching PTM decoys
+[17:15] Training neural networks: 45635 targets, 17805 decoys
+[17:19] Number of IDs at 0.01 FDR: 35426
+[17:20] Calculating protein q-values
+[17:20] Number of genes identified at 1% FDR: 3401 (precursor-level), 3261 (protein-level) (inference performed using proteotypic peptides only)
+[17:20] Quantification
+[17:20] Precursors with monitored PTMs at 1% FDR: 416 out of 433
+[17:20] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[17:21] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-4_DIA.raw.quant.
+
+[17:21] File #18/53
+[17:21] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-5_DIA.raw
+[17:58] 74343 library precursors are potentially detectable
+[17:58] Processing...
+[18:04] RT window set to 2.83079
+[18:04] Recommended MS1 mass accuracy setting: 3.62117 ppm
+[18:10] Removing low confidence identifications
+[18:10] Searching PTM decoys
+[18:11] Training neural networks: 45587 targets, 18067 decoys
+[18:15] Number of IDs at 0.01 FDR: 34454
+[18:16] Calculating protein q-values
+[18:16] Number of genes identified at 1% FDR: 3373 (precursor-level), 3268 (protein-level) (inference performed using proteotypic peptides only)
+[18:16] Quantification
+[18:17] Precursors with monitored PTMs at 1% FDR: 424 out of 444
+[18:17] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[18:17] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-1-5_DIA.raw.quant.
+
+[18:18] File #19/53
+[18:18] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-1_DIA.raw
+[18:54] 74343 library precursors are potentially detectable
+[18:54] Processing...
+[19:00] RT window set to 2.80178
+[19:00] Recommended MS1 mass accuracy setting: 3.36198 ppm
+[19:07] Removing low confidence identifications
+[19:07] Searching PTM decoys
+[19:08] Training neural networks: 47715 targets, 20075 decoys
+[19:12] Number of IDs at 0.01 FDR: 36544
+[19:13] Calculating protein q-values
+[19:13] Number of genes identified at 1% FDR: 3408 (precursor-level), 3291 (protein-level) (inference performed using proteotypic peptides only)
+[19:13] Quantification
+[19:14] Precursors with monitored PTMs at 1% FDR: 429 out of 477
+[19:14] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[19:14] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-1_DIA.raw.quant.
+
+[19:15] File #20/53
+[19:15] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-2_DIA.raw
+[19:54] 74343 library precursors are potentially detectable
+[19:54] Processing...
+[20:00] RT window set to 2.76077
+[20:00] Recommended MS1 mass accuracy setting: 3.60082 ppm
+[20:07] Removing low confidence identifications
+[20:07] Searching PTM decoys
+[20:07] Training neural networks: 47542 targets, 19753 decoys
+[20:12] Number of IDs at 0.01 FDR: 36390
+[20:13] Calculating protein q-values
+[20:13] Number of genes identified at 1% FDR: 3442 (precursor-level), 3321 (protein-level) (inference performed using proteotypic peptides only)
+[20:13] Quantification
+[20:13] Precursors with monitored PTMs at 1% FDR: 434 out of 473
+[20:13] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[20:14] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-2_DIA.raw.quant.
+
+[20:15] File #21/53
+[20:15] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-3_DIA.raw
+[20:55] 74343 library precursors are potentially detectable
+[20:55] Processing...
+[21:00] RT window set to 2.77577
+[21:00] Recommended MS1 mass accuracy setting: 3.31476 ppm
+[21:08] Removing low confidence identifications
+[21:08] Searching PTM decoys
+[21:08] Training neural networks: 48502 targets, 20658 decoys
+[21:13] Number of IDs at 0.01 FDR: 36215
+[21:14] Calculating protein q-values
+[21:14] Number of genes identified at 1% FDR: 3392 (precursor-level), 3274 (protein-level) (inference performed using proteotypic peptides only)
+[21:14] Quantification
+[21:14] Precursors with monitored PTMs at 1% FDR: 430 out of 456
+[21:14] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[21:15] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-3_DIA.raw.quant.
+
+[21:15] File #22/53
+[21:15] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-4_DIA.raw
+[21:53] 74343 library precursors are potentially detectable
+[21:53] Processing...
+[21:58] RT window set to 2.7952
+[21:58] Recommended MS1 mass accuracy setting: 3.28878 ppm
+[22:04] Removing low confidence identifications
+[22:04] Searching PTM decoys
+[22:05] Training neural networks: 44535 targets, 17071 decoys
+[22:09] Number of IDs at 0.01 FDR: 34170
+[22:09] Calculating protein q-values
+[22:09] Number of genes identified at 1% FDR: 3300 (precursor-level), 3155 (protein-level) (inference performed using proteotypic peptides only)
+[22:09] Quantification
+[22:10] Precursors with monitored PTMs at 1% FDR: 436 out of 456
+[22:10] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[22:11] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-4_DIA.raw.quant.
+
+[22:11] File #23/53
+[22:11] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-5_DIA.raw
+[22:48] 74343 library precursors are potentially detectable
+[22:48] Processing...
+[22:54] RT window set to 2.82029
+[22:54] Recommended MS1 mass accuracy setting: 3.43158 ppm
+[23:00] Removing low confidence identifications
+[23:00] Searching PTM decoys
+[23:01] Training neural networks: 46484 targets, 18787 decoys
+[23:06] Number of IDs at 0.01 FDR: 35723
+[23:06] Calculating protein q-values
+[23:06] Number of genes identified at 1% FDR: 3394 (precursor-level), 3275 (protein-level) (inference performed using proteotypic peptides only)
+[23:06] Quantification
+[23:07] Precursors with monitored PTMs at 1% FDR: 430 out of 458
+[23:07] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[23:08] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-5_DIA.raw.quant.
+
+[23:08] File #24/53
+[23:08] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-6_DIA.raw
+[23:47] 74343 library precursors are potentially detectable
+[23:47] Processing...
+[23:53] RT window set to 2.78851
+[23:53] Recommended MS1 mass accuracy setting: 3.41758 ppm
+[23:59] Removing low confidence identifications
+[23:59] Searching PTM decoys
+[24:00] Training neural networks: 47809 targets, 19591 decoys
+[24:05] Number of IDs at 0.01 FDR: 36874
+[24:06] Calculating protein q-values
+[24:06] Number of genes identified at 1% FDR: 3420 (precursor-level), 3331 (protein-level) (inference performed using proteotypic peptides only)
+[24:06] Quantification
+[24:07] Precursors with monitored PTMs at 1% FDR: 447 out of 469
+[24:07] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[24:07] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-6_DIA.raw.quant.
+
+[24:07] File #25/53
+[24:07] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-7_DIA.raw
+[24:44] 74343 library precursors are potentially detectable
+[24:44] Processing...
+[24:50] RT window set to 2.80897
+[24:50] Recommended MS1 mass accuracy setting: 3.28565 ppm
+[24:57] Removing low confidence identifications
+[24:57] Searching PTM decoys
+[24:58] Training neural networks: 48204 targets, 20262 decoys
+[25:02] Number of IDs at 0.01 FDR: 37222
+[25:03] Calculating protein q-values
+[25:03] Number of genes identified at 1% FDR: 3455 (precursor-level), 3357 (protein-level) (inference performed using proteotypic peptides only)
+[25:03] Quantification
+[25:04] Precursors with monitored PTMs at 1% FDR: 456 out of 487
+[25:04] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[25:04] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-7_DIA.raw.quant.
+
+[25:05] File #26/53
+[25:05] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-8_DIA.raw
+[25:44] 74343 library precursors are potentially detectable
+[25:44] Processing...
+[25:50] RT window set to 2.782
+[25:50] Recommended MS1 mass accuracy setting: 3.57161 ppm
+[25:57] Removing low confidence identifications
+[25:57] Searching PTM decoys
+[25:57] Training neural networks: 47488 targets, 19624 decoys
+[26:02] Number of IDs at 0.01 FDR: 36590
+[26:03] Calculating protein q-values
+[26:03] Number of genes identified at 1% FDR: 3450 (precursor-level), 3329 (protein-level) (inference performed using proteotypic peptides only)
+[26:03] Quantification
+[26:03] Precursors with monitored PTMs at 1% FDR: 431 out of 469
+[26:03] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[26:04] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-8_DIA.raw.quant.
+
+[26:05] File #27/53
+[26:05] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-9_DIA.raw
+[26:44] 74343 library precursors are potentially detectable
+[26:44] Processing...
+[26:50] RT window set to 2.81724
+[26:50] Recommended MS1 mass accuracy setting: 3.41745 ppm
+[26:57] Removing low confidence identifications
+[26:57] Searching PTM decoys
+[26:57] Training neural networks: 48257 targets, 20501 decoys
+[27:03] Number of IDs at 0.01 FDR: 36851
+[27:03] Calculating protein q-values
+[27:03] Number of genes identified at 1% FDR: 3450 (precursor-level), 3350 (protein-level) (inference performed using proteotypic peptides only)
+[27:03] Quantification
+[27:04] Precursors with monitored PTMs at 1% FDR: 407 out of 471
+[27:04] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[27:05] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-9_DIA.raw.quant.
+
+[27:05] File #28/53
+[27:05] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-10_DIA.raw
+[27:43] 74343 library precursors are potentially detectable
+[27:44] Processing...
+[27:49] RT window set to 2.81443
+[27:49] Recommended MS1 mass accuracy setting: 3.54311 ppm
+[27:56] Removing low confidence identifications
+[27:56] Searching PTM decoys
+[27:57] Training neural networks: 47932 targets, 20235 decoys
+[28:01] Number of IDs at 0.01 FDR: 36802
+[28:02] Calculating protein q-values
+[28:02] Number of genes identified at 1% FDR: 3439 (precursor-level), 3297 (protein-level) (inference performed using proteotypic peptides only)
+[28:02] Quantification
+[28:03] Precursors with monitored PTMs at 1% FDR: 463 out of 495
+[28:03] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[28:04] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-10_DIA.raw.quant.
+
+[28:04] File #29/53
+[28:04] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-11_DIA.raw
+[28:43] 74343 library precursors are potentially detectable
+[28:43] Processing...
+[28:49] RT window set to 2.79607
+[28:49] Recommended MS1 mass accuracy setting: 3.67951 ppm
+[28:56] Removing low confidence identifications
+[28:56] Searching PTM decoys
+[28:56] Training neural networks: 48362 targets, 20063 decoys
+[29:01] Number of IDs at 0.01 FDR: 37441
+[29:02] Calculating protein q-values
+[29:02] Number of genes identified at 1% FDR: 3454 (precursor-level), 3350 (protein-level) (inference performed using proteotypic peptides only)
+[29:02] Quantification
+[29:03] Precursors with monitored PTMs at 1% FDR: 457 out of 477
+[29:03] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[29:03] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-11_DIA.raw.quant.
+
+[29:04] File #30/53
+[29:04] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-12_DIA.raw
+[29:43] 74343 library precursors are potentially detectable
+[29:43] Processing...
+[29:49] RT window set to 2.79171
+[29:49] Recommended MS1 mass accuracy setting: 3.25553 ppm
+[29:56] Removing low confidence identifications
+[29:56] Searching PTM decoys
+[29:57] Training neural networks: 48597 targets, 20371 decoys
+[30:01] Number of IDs at 0.01 FDR: 37423
+[30:02] Calculating protein q-values
+[30:02] Number of genes identified at 1% FDR: 3452 (precursor-level), 3338 (protein-level) (inference performed using proteotypic peptides only)
+[30:02] Quantification
+[30:03] Precursors with monitored PTMs at 1% FDR: 447 out of 497
+[30:03] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[30:04] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-12_DIA.raw.quant.
+
+[30:04] File #31/53
+[30:04] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-13_DIA.raw
+[30:36] 74343 library precursors are potentially detectable
+[30:36] Processing...
+[30:41] RT window set to 2.50145
+[30:41] Recommended MS1 mass accuracy setting: 3.4145 ppm
+[30:47] Removing low confidence identifications
+[30:47] Searching PTM decoys
+[30:48] Training neural networks: 44336 targets, 17794 decoys
+[30:52] Number of IDs at 0.01 FDR: 34612
+[30:52] Calculating protein q-values
+[30:52] Number of genes identified at 1% FDR: 3432 (precursor-level), 3354 (protein-level) (inference performed using proteotypic peptides only)
+[30:52] Quantification
+[30:53] Precursors with monitored PTMs at 1% FDR: 366 out of 389
+[30:53] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[30:53] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2_mix-13_DIA.raw.quant.
+
+[30:54] File #32/53
+[30:54] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-1_DIA.raw
+[31:32] 74343 library precursors are potentially detectable
+[31:32] Processing...
+[31:38] RT window set to 2.79142
+[31:38] Recommended MS1 mass accuracy setting: 3.82039 ppm
+[31:44] Removing low confidence identifications
+[31:44] Searching PTM decoys
+[31:45] Training neural networks: 49168 targets, 21088 decoys
+[31:49] Number of IDs at 0.01 FDR: 38590
+[31:50] Calculating protein q-values
+[31:50] Number of genes identified at 1% FDR: 3517 (precursor-level), 3370 (protein-level) (inference performed using proteotypic peptides only)
+[31:50] Quantification
+[31:51] Precursors with monitored PTMs at 1% FDR: 412 out of 428
+[31:51] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[31:52] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-1_DIA.raw.quant.
+
+[31:52] File #33/53
+[31:52] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-2_DIA.raw
+[32:34] 74343 library precursors are potentially detectable
+[32:34] Processing...
+[32:40] RT window set to 2.82107
+[32:40] Recommended MS1 mass accuracy setting: 3.72733 ppm
+[32:47] Removing low confidence identifications
+[32:47] Searching PTM decoys
+[32:48] Training neural networks: 50456 targets, 22313 decoys
+[32:53] Number of IDs at 0.01 FDR: 39567
+[32:54] Calculating protein q-values
+[32:54] Number of genes identified at 1% FDR: 3524 (precursor-level), 3418 (protein-level) (inference performed using proteotypic peptides only)
+[32:54] Quantification
+[32:54] Precursors with monitored PTMs at 1% FDR: 402 out of 432
+[32:54] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[32:55] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-2_DIA.raw.quant.
+
+[32:55] File #34/53
+[32:55] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-3_DIA.raw
+[33:36] 74343 library precursors are potentially detectable
+[33:36] Processing...
+[33:42] RT window set to 2.81331
+[33:42] Recommended MS1 mass accuracy setting: 3.32784 ppm
+[33:49] Removing low confidence identifications
+[33:49] Searching PTM decoys
+[33:50] Training neural networks: 49742 targets, 21928 decoys
+[33:54] Number of IDs at 0.01 FDR: 38603
+[33:55] Calculating protein q-values
+[33:55] Number of genes identified at 1% FDR: 3502 (precursor-level), 3413 (protein-level) (inference performed using proteotypic peptides only)
+[33:55] Quantification
+[33:56] Precursors with monitored PTMs at 1% FDR: 420 out of 437
+[33:56] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[33:57] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-3_DIA.raw.quant.
+
+[33:57] File #35/53
+[33:57] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-4_DIA.raw
+[34:35] 74343 library precursors are potentially detectable
+[34:35] Processing...
+[34:41] RT window set to 2.84391
+[34:41] Recommended MS1 mass accuracy setting: 3.19463 ppm
+[34:48] Removing low confidence identifications
+[34:48] Searching PTM decoys
+[34:48] Training neural networks: 47382 targets, 19343 decoys
+[34:53] Number of IDs at 0.01 FDR: 36469
+[34:54] Calculating protein q-values
+[34:54] Number of genes identified at 1% FDR: 3445 (precursor-level), 3303 (protein-level) (inference performed using proteotypic peptides only)
+[34:54] Quantification
+[34:54] Precursors with monitored PTMs at 1% FDR: 400 out of 419
+[34:54] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[34:55] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-4_DIA.raw.quant.
+
+[34:55] File #36/53
+[34:55] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-13_DIA.raw
+[35:33] 74343 library precursors are potentially detectable
+[35:33] Processing...
+[35:38] RT window set to 2.82944
+[35:38] Recommended MS1 mass accuracy setting: 3.15046 ppm
+[35:45] Removing low confidence identifications
+[35:45] Searching PTM decoys
+[35:46] Training neural networks: 47477 targets, 19665 decoys
+[35:50] Number of IDs at 0.01 FDR: 35848
+[35:51] Calculating protein q-values
+[35:51] Number of genes identified at 1% FDR: 3411 (precursor-level), 3338 (protein-level) (inference performed using proteotypic peptides only)
+[35:51] Quantification
+[35:52] Precursors with monitored PTMs at 1% FDR: 430 out of 453
+[35:52] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[35:52] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-2-13_DIA.raw.quant.
+
+[35:53] File #37/53
+[35:53] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-1_DIA.raw
+[36:30] 74343 library precursors are potentially detectable
+[36:30] Processing...
+[36:35] RT window set to 2.79937
+[36:35] Recommended MS1 mass accuracy setting: 3.37462 ppm
+[36:41] Removing low confidence identifications
+[36:41] Searching PTM decoys
+[36:42] Training neural networks: 43506 targets, 16975 decoys
+[36:46] Number of IDs at 0.01 FDR: 32256
+[36:47] Calculating protein q-values
+[36:47] Number of genes identified at 1% FDR: 3239 (precursor-level), 3121 (protein-level) (inference performed using proteotypic peptides only)
+[36:47] Quantification
+[36:48] Precursors with monitored PTMs at 1% FDR: 403 out of 433
+[36:48] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[36:48] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-1_DIA.raw.quant.
+
+[36:49] File #38/53
+[36:49] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-2_DIA.raw
+[37:23] 74343 library precursors are potentially detectable
+[37:23] Processing...
+[37:28] RT window set to 2.79826
+[37:28] Recommended MS1 mass accuracy setting: 3.69502 ppm
+[37:34] Removing low confidence identifications
+[37:34] Searching PTM decoys
+[37:35] Training neural networks: 40970 targets, 14952 decoys
+[37:39] Number of IDs at 0.01 FDR: 29915
+[37:39] Calculating protein q-values
+[37:40] Number of genes identified at 1% FDR: 3096 (precursor-level), 2999 (protein-level) (inference performed using proteotypic peptides only)
+[37:40] Quantification
+[37:40] Precursors with monitored PTMs at 1% FDR: 363 out of 389
+[37:40] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[37:41] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-2_DIA.raw.quant.
+
+[37:41] File #39/53
+[37:41] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-3_DIA.raw
+[38:18] 74343 library precursors are potentially detectable
+[38:18] Processing...
+[38:23] RT window set to 2.80123
+[38:23] Recommended MS1 mass accuracy setting: 3.36696 ppm
+[38:29] Removing low confidence identifications
+[38:29] Searching PTM decoys
+[38:30] Training neural networks: 42077 targets, 15832 decoys
+[38:34] Number of IDs at 0.01 FDR: 31315
+[38:34] Calculating protein q-values
+[38:34] Number of genes identified at 1% FDR: 3221 (precursor-level), 3083 (protein-level) (inference performed using proteotypic peptides only)
+[38:34] Quantification
+[38:35] Precursors with monitored PTMs at 1% FDR: 389 out of 418
+[38:35] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[38:36] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-3_DIA.raw.quant.
+
+[38:36] File #40/53
+[38:36] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-4_DIA.raw
+[39:14] 74343 library precursors are potentially detectable
+[39:14] Processing...
+[39:19] RT window set to 2.81533
+[39:19] Recommended MS1 mass accuracy setting: 3.57349 ppm
+[39:25] Removing low confidence identifications
+[39:25] Searching PTM decoys
+[39:26] Training neural networks: 43961 targets, 17183 decoys
+[39:30] Number of IDs at 0.01 FDR: 32663
+[39:31] Calculating protein q-values
+[39:31] Number of genes identified at 1% FDR: 3276 (precursor-level), 3147 (protein-level) (inference performed using proteotypic peptides only)
+[39:31] Quantification
+[39:32] Precursors with monitored PTMs at 1% FDR: 393 out of 431
+[39:32] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[39:32] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-4_DIA.raw.quant.
+
+[39:32] File #41/53
+[39:32] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-5_DIA.raw
+[40:11] 74343 library precursors are potentially detectable
+[40:11] Processing...
+[40:17] RT window set to 2.81955
+[40:17] Recommended MS1 mass accuracy setting: 3.92525 ppm
+[40:23] Removing low confidence identifications
+[40:23] Searching PTM decoys
+[40:24] Training neural networks: 45654 targets, 18313 decoys
+[40:28] Number of IDs at 0.01 FDR: 34309
+[40:29] Calculating protein q-values
+[40:29] Number of genes identified at 1% FDR: 3391 (precursor-level), 3294 (protein-level) (inference performed using proteotypic peptides only)
+[40:29] Quantification
+[40:30] Precursors with monitored PTMs at 1% FDR: 420 out of 452
+[40:30] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[40:30] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-5_DIA.raw.quant.
+
+[40:31] File #42/53
+[40:31] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-6_DIA.raw
+[41:10] 74343 library precursors are potentially detectable
+[41:10] Processing...
+[41:16] RT window set to 2.79921
+[41:16] Recommended MS1 mass accuracy setting: 3.31851 ppm
+[41:23] Removing low confidence identifications
+[41:23] Searching PTM decoys
+[41:23] Training neural networks: 46172 targets, 19234 decoys
+[41:28] Number of IDs at 0.01 FDR: 34645
+[41:28] Calculating protein q-values
+[41:28] Number of genes identified at 1% FDR: 3377 (precursor-level), 3256 (protein-level) (inference performed using proteotypic peptides only)
+[41:28] Quantification
+[41:29] Precursors with monitored PTMs at 1% FDR: 415 out of 445
+[41:29] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[41:30] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-6_DIA.raw.quant.
+
+[41:30] File #43/53
+[41:30] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-7_DIA.raw
+[42:08] 74343 library precursors are potentially detectable
+[42:08] Processing...
+[42:14] RT window set to 2.79041
+[42:14] Recommended MS1 mass accuracy setting: 3.45918 ppm
+[42:20] Removing low confidence identifications
+[42:20] Searching PTM decoys
+[42:21] Training neural networks: 45297 targets, 18296 decoys
+[42:25] Number of IDs at 0.01 FDR: 33843
+[42:26] Calculating protein q-values
+[42:26] Number of genes identified at 1% FDR: 3320 (precursor-level), 3179 (protein-level) (inference performed using proteotypic peptides only)
+[42:26] Quantification
+[42:27] Precursors with monitored PTMs at 1% FDR: 426 out of 455
+[42:27] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[42:27] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-7_DIA.raw.quant.
+
+[42:27] File #44/53
+[42:27] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-8_DIA.raw
+[43:04] 74343 library precursors are potentially detectable
+[43:04] Processing...
+[43:09] RT window set to 2.82046
+[43:09] Recommended MS1 mass accuracy setting: 3.74574 ppm
+[43:15] Removing low confidence identifications
+[43:15] Searching PTM decoys
+[43:16] Training neural networks: 44871 targets, 17712 decoys
+[43:20] Number of IDs at 0.01 FDR: 33284
+[43:21] Calculating protein q-values
+[43:21] Number of genes identified at 1% FDR: 3344 (precursor-level), 3217 (protein-level) (inference performed using proteotypic peptides only)
+[43:21] Quantification
+[43:22] Precursors with monitored PTMs at 1% FDR: 424 out of 446
+[43:22] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[43:22] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-8_DIA.raw.quant.
+
+[43:23] File #45/53
+[43:23] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-9_DIA.raw
+[44:00] 74343 library precursors are potentially detectable
+[44:00] Processing...
+[44:05] RT window set to 2.8116
+[44:05] Recommended MS1 mass accuracy setting: 3.84155 ppm
+[44:12] Removing low confidence identifications
+[44:12] Searching PTM decoys
+[44:13] Training neural networks: 43741 targets, 16733 decoys
+[44:17] Number of IDs at 0.01 FDR: 32727
+[44:17] Calculating protein q-values
+[44:17] Number of genes identified at 1% FDR: 3286 (precursor-level), 3166 (protein-level) (inference performed using proteotypic peptides only)
+[44:17] Quantification
+[44:18] Precursors with monitored PTMs at 1% FDR: 401 out of 448
+[44:18] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[44:19] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-9_DIA.raw.quant.
+
+[44:19] File #46/53
+[44:19] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-10_DIA.raw
+[44:53] 74343 library precursors are potentially detectable
+[44:53] Processing...
+[44:59] RT window set to 2.82707
+[44:59] Recommended MS1 mass accuracy setting: 3.63051 ppm
+[45:05] Removing low confidence identifications
+[45:05] Searching PTM decoys
+[45:06] Training neural networks: 43628 targets, 17154 decoys
+[45:10] Number of IDs at 0.01 FDR: 32165
+[45:11] Calculating protein q-values
+[45:11] Number of genes identified at 1% FDR: 3257 (precursor-level), 3127 (protein-level) (inference performed using proteotypic peptides only)
+[45:11] Quantification
+[45:11] Precursors with monitored PTMs at 1% FDR: 407 out of 432
+[45:11] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[45:12] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-10_DIA.raw.quant.
+
+[45:12] File #47/53
+[45:12] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-11_DIA.raw
+[45:50] 74343 library precursors are potentially detectable
+[45:50] Processing...
+[45:56] RT window set to 2.80379
+[45:56] Recommended MS1 mass accuracy setting: 3.7821 ppm
+[46:02] Removing low confidence identifications
+[46:02] Searching PTM decoys
+[46:02] Training neural networks: 43918 targets, 17004 decoys
+[46:07] Number of IDs at 0.01 FDR: 32740
+[46:07] Calculating protein q-values
+[46:07] Number of genes identified at 1% FDR: 3286 (precursor-level), 3180 (protein-level) (inference performed using proteotypic peptides only)
+[46:07] Quantification
+[46:08] Precursors with monitored PTMs at 1% FDR: 409 out of 437
+[46:08] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[46:08] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-11_DIA.raw.quant.
+
+[46:09] File #48/53
+[46:09] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-12_DIA.raw
+[46:49] 74343 library precursors are potentially detectable
+[46:49] Processing...
+[46:55] RT window set to 2.78367
+[46:55] Recommended MS1 mass accuracy setting: 3.73537 ppm
+[47:02] Removing low confidence identifications
+[47:02] Searching PTM decoys
+[47:02] Training neural networks: 46998 targets, 19481 decoys
+[47:07] Number of IDs at 0.01 FDR: 35356
+[47:08] Calculating protein q-values
+[47:08] Number of genes identified at 1% FDR: 3388 (precursor-level), 3284 (protein-level) (inference performed using proteotypic peptides only)
+[47:08] Quantification
+[47:08] Precursors with monitored PTMs at 1% FDR: 414 out of 436
+[47:08] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[47:09] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-12_DIA.raw.quant.
+
+[47:10] File #49/53
+[47:10] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-13_DIA.raw
+[47:48] 74343 library precursors are potentially detectable
+[47:48] Processing...
+[47:54] RT window set to 2.81081
+[47:54] Recommended MS1 mass accuracy setting: 3.63376 ppm
+[48:01] Removing low confidence identifications
+[48:01] Searching PTM decoys
+[48:01] Training neural networks: 44119 targets, 16901 decoys
+[48:06] Number of IDs at 0.01 FDR: 33420
+[48:06] Calculating protein q-values
+[48:06] Number of genes identified at 1% FDR: 3320 (precursor-level), 3174 (protein-level) (inference performed using proteotypic peptides only)
+[48:06] Quantification
+[48:07] Precursors with monitored PTMs at 1% FDR: 442 out of 459
+[48:07] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[48:08] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3_mix-13_DIA.raw.quant.
+
+[48:08] File #50/53
+[48:08] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-1_DIA.raw
+[48:48] 74343 library precursors are potentially detectable
+[48:48] Processing...
+[48:53] RT window set to 2.77823
+[48:53] Recommended MS1 mass accuracy setting: 3.70376 ppm
+[49:00] Removing low confidence identifications
+[49:00] Searching PTM decoys
+[49:00] Training neural networks: 47501 targets, 19603 decoys
+[49:05] Number of IDs at 0.01 FDR: 36754
+[49:06] Calculating protein q-values
+[49:06] Number of genes identified at 1% FDR: 3446 (precursor-level), 3310 (protein-level) (inference performed using proteotypic peptides only)
+[49:06] Quantification
+[49:07] Precursors with monitored PTMs at 1% FDR: 397 out of 427
+[49:07] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[49:07] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-1_DIA.raw.quant.
+
+[49:08] File #51/53
+[49:08] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-2_DIA.raw
+[49:48] 74343 library precursors are potentially detectable
+[49:48] Processing...
+[49:54] RT window set to 2.77352
+[49:54] Recommended MS1 mass accuracy setting: 3.39631 ppm
+[50:01] Removing low confidence identifications
+[50:01] Searching PTM decoys
+[50:02] Training neural networks: 49363 targets, 21722 decoys
+[50:07] Number of IDs at 0.01 FDR: 37239
+[50:08] Calculating protein q-values
+[50:08] Number of genes identified at 1% FDR: 3467 (precursor-level), 3347 (protein-level) (inference performed using proteotypic peptides only)
+[50:08] Quantification
+[50:09] Precursors with monitored PTMs at 1% FDR: 380 out of 430
+[50:09] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[50:10] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-2_DIA.raw.quant.
+
+[50:10] File #52/53
+[50:10] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-3_DIA.raw
+[50:53] 74343 library precursors are potentially detectable
+[50:53] Processing...
+[51:00] RT window set to 2.81631
+[51:00] Recommended MS1 mass accuracy setting: 3.85618 ppm
+[51:07] Removing low confidence identifications
+[51:07] Searching PTM decoys
+[51:07] Training neural networks: 49332 targets, 21912 decoys
+[51:12] Number of IDs at 0.01 FDR: 37732
+[51:13] Calculating protein q-values
+[51:13] Number of genes identified at 1% FDR: 3489 (precursor-level), 3398 (protein-level) (inference performed using proteotypic peptides only)
+[51:13] Quantification
+[51:14] Precursors with monitored PTMs at 1% FDR: 399 out of 451
+[51:14] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[51:15] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-3_DIA.raw.quant.
+
+[51:15] File #53/53
+[51:15] Loading run C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-4_DIA.raw
+[51:54] 74343 library precursors are potentially detectable
+[51:54] Processing...
+[51:59] RT window set to 2.81316
+[51:59] Recommended MS1 mass accuracy setting: 3.69733 ppm
+[52:06] Removing low confidence identifications
+[52:06] Searching PTM decoys
+[52:06] Training neural networks: 45745 targets, 18260 decoys
+[52:10] Number of IDs at 0.01 FDR: 34776
+[52:11] Calculating protein q-values
+[52:11] Number of genes identified at 1% FDR: 3399 (precursor-level), 3270 (protein-level) (inference performed using proteotypic peptides only)
+[52:11] Quantification
+[52:12] Precursors with monitored PTMs at 1% FDR: 404 out of 430
+[52:12] Unmodified precursors with monitored PTM sites at 1% FDR: 0 out of 0
+[52:12] Quantification information saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIA\Platelets-3-4_DIA.raw.quant.
+
+[52:13] Cross-run analysis
+[52:13] Reading quantification information: 53 files
+[52:31] Quantifying peptides
+[53:22] Quantifying proteins
+[53:26] Calculating q-values for protein and gene groups
+[53:29] Calculating global q-values for protein and gene groups
+[53:29] Writing report
+[58:09] Report saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.tsv.
+[58:09] Saving precursor levels matrix
+[58:13] Precursor levels matrix (1% precursor and protein group FDR) saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.pr_matrix.tsv.
+[58:13] Saving protein group levels matrix
+[58:14] Protein group levels matrix (1% precursor FDR and protein group FDR) saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.pg_matrix.tsv.
+[58:14] Saving gene group levels matrix
+[58:14] Gene groups levels matrix (1% precursor FDR and protein group FDR) saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.gg_matrix.tsv.
+[58:14] Saving unique genes levels matrix
+[58:15] Unique genes levels matrix (1% precursor FDR and protein group FDR) saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.unique_genes_matrix.tsv.
+[58:15] Stats report saved to C:\Users\massspecuser\Desktop\DIA_Latin_square\DIANN_output_lib3\report.stats.tsv
