@@ -56,7 +56,7 @@ ggsave(plot = plot_detection,
        dpi = 320)
 
 #######################################################################################################################
-## FC estimates
+## FC estimates - Plot 1
 #######################################################################################################################
 
 ## Labels
@@ -66,6 +66,7 @@ data_set_labels_2 <- c("IN-RS", "IN-MP",
                      "IN-RS", "IN-MP",
                      "IQ-RS", "IQ-MP",
                      "IM-RS", "IM-MP")
+
 names(data_set_labels_2) <-  c("DDA_IN_RS", "DDA_IN_MP",
                              "DDA_IQ_RS", "DDA_IQ_MP",
                              "DDA_IM_RS", "DDA_IM_MP",
@@ -127,4 +128,43 @@ ggsave(plot = ggarrange(de_dda, de_dia, nrow = 2, labels = c("DDA", "DIA"), comm
        filename = paste0("figure_de_estimates.pdf"),
        path = paste0("./Figures/"),
        width = 11.69, height = 6, units = "in",
+       dpi = 320)
+
+#######################################################################################################################
+## FC estimates - Plot 2
+#######################################################################################################################
+
+de_rmse <- differential_expression_estimates %>% filter(!is.na(EstimatedFC)) %>% group_by(Protein, Dataset) %>% 
+                summarise(RMSE = sqrt((sum((TrueFC - EstimatedFC)^2))/n()), Count = n()) %>% ungroup()
+
+de_rmse <- de_rmse %>% filter(Count == 12)
+de_rmse <- de_rmse %>% complete(Protein, Dataset)
+
+de_rmse_summary <- de_rmse %>% group_by(Dataset) %>% summarise(MedianRMSE = median(RMSE, na.rm = T)) %>%
+                            ungroup() %>% arrange(MedianRMSE)
+
+de_rmse$Dataset <- factor(de_rmse$Dataset,
+                       levels = rev(de_rmse_summary$Dataset))
+
+rmse_plot <- ggplot(data = de_rmse ,
+       aes(x = Protein, y = Dataset, fill = RMSE))+
+    geom_tile(color = "black")+
+    # geom_text(aes(x = Protein, y = Dataset, label = as.character(Count)))+
+    scale_fill_viridis_c(direction = -1, na.value = "white")+
+    scale_x_discrete(expand=c(0,0))+
+    scale_y_discrete(expand=c(0,0), labels = data_set_labels)+
+    theme_linedraw()+
+    theme(
+        axis.title.y = element_blank(),
+        legend.position = "top",
+        legend.justification = "right"
+    )
+
+### Combined plot
+ggsave(plot = ggarrange(de_dda, de_dia, rmse_plot, 
+                        nrow = 3, labels = c("A - DDA", "B - DIA","C - RMSE"), common.legend = TRUE, vjust = 0,
+                        hjust = 0),
+       filename = paste0("figure_de_estimates.pdf"),
+       path = paste0("./Figures/"),
+       width = 11.69, height = 9, units = "in",
        dpi = 320)
