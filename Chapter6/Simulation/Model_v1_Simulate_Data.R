@@ -8,14 +8,13 @@ Current_Directory <- getwd()
 ## Part - 0.2: Define proteome file
 #######################################################################################################################
 
-Proteome <- paste0(Proteome_Directory, Simulation_Proteome)
+Proteome <- paste0("Shared_Peptide_Dataset.txt")
 
 #######################################################################################################################
 ## Part - 1: Select Proteins
 #######################################################################################################################
 
 ## Select protein sequences
-
 print(paste0("Reading in Proteome."))
 
 Input_Proteome <- read.fasta(file = Proteome, seqtype = "AA", as.string = TRUE, 
